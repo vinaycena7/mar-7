@@ -1,0 +1,5 @@
+s = '!Hello'
+    pos = 2
+ 
+    s = s[0:pos] + s[pos+1:]
+ 
