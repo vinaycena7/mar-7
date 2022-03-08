@@ -1,0 +1,32 @@
+def rankify(A):
+ 
+
+    R = [0 for x in range(len(A))]
+ 
+
+    for i in range(len(A)):
+
+        (r, s) = (1, 1)
+
+        for j in range(len(A)):
+
+            if j != i and A[j] < A[i]:
+
+                r += 1
+
+            if j != i and A[j] == A[i]:
+
+                s +1
+
+        R[i] = r + (s - 1) / 2
+ 
+
+    # Return Rank Vector
+
+    return R
+ 
+
+    A = [1, 2, 5, 2, 1, 25, 2]
+
+    print(A)
+
